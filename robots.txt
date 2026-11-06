@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://summer114514-hub.github.io/sitemap.xml
