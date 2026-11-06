@@ -16,4 +16,4 @@ Canonical URLs, Open Graph URLs, structured data, robots.txt and sitemap.xml use
 
 ## Current release
 
-Updated from `zilinhe-site_1.zip` on November 6, 2026. The refreshed design includes a simulated price-path chart and a persistent light/dark theme control. Previously confirmed project contribution descriptions are retained. The existing custom domain and HTTPS configuration remain in use.
+Updated from `zilinhe-site_2.zip` on November 6, 2026. This release adds five research figures across the three project pages. The animated homepage, persistent light/dark theme control, approved contribution descriptions, custom domain and HTTPS remain in use. Stylesheets use a content version to avoid stale browser caches.
