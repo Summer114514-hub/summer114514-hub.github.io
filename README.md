@@ -13,3 +13,7 @@ Edit the relevant HTML file and commit to `main`. Keep project status and person
 The primary domain is `zilinhe.com`; `www.zilinhe.com` is its redirecting alias. Cloudflare DNS must point the four apex A records to GitHub Pages and `www` to `summer114514-hub.github.io`, with DNS Only selected. Domain resolution and HTTPS are usable only after DNS and GitHub certificate provisioning complete.
 
 Canonical URLs, Open Graph URLs, structured data, robots.txt and sitemap.xml use the primary domain. Preserve the CNAME file when updating the site. GitHub manages the HTTPS certificate once the DNS check passes.
+
+## Current release
+
+Updated from `zilinhe-site_1.zip` on November 6, 2026. The refreshed design includes a simulated price-path chart and a persistent light/dark theme control. Previously confirmed project contribution descriptions are retained. The existing custom domain and HTTPS configuration remain in use.

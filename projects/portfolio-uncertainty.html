@@ -8,20 +8,24 @@
 <link rel="canonical" href="https://zilinhe.com/projects/portfolio-uncertainty.html">
 <meta property="og:type" content="article"><meta property="og:title" content="Portfolio choice under parameter uncertainty · Zilin He"><meta property="og:description" content="A learning project on portfolio choice under parameter uncertainty, using rolling-window covariance estimates and the Merton problem."><meta property="og:url" content="https://zilinhe.com/projects/portfolio-uncertainty.html"><meta property="og:site_name" content="Zilin He">
 <meta name="twitter:card" content="summary">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%226%22 fill=%22%2327516b%22/%3E%3Ctext x=%2216%22 y=%2222%22 font-family=%22Georgia,serif%22 font-size=%2217%22 font-weight=%22600%22 fill=%22white%22 text-anchor=%22middle%22%3EZH%3C/text%3E%3C/svg%3E">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%226%22 fill=%22%230f6b5a%22/%3E%3Ctext x=%2216%22 y=%2222%22 font-family=%22Georgia,serif%22 font-size=%2217%22 font-weight=%22600%22 fill=%22white%22 text-anchor=%22middle%22%3EZH%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
 <link rel="stylesheet" href="../style.css">
 
 </head>
 <body>
+<div class="top"><a class="brand" href="../index.html">Zilin He</a><nav><a href="../index.html#work">Work</a><a href="../projects/index.html" aria-current="page">Projects</a><a href="../about.html">About</a><a href="../index.html#contact">Contact</a><button type="button" id="theme" aria-label="Toggle color theme">Theme</button></nav></div>
+
 <div class="wrap">
-<div class="top"><a class="brand" href="../index.html">Zilin He</a><nav><a href="../index.html#work">Work</a><a href="../projects/index.html" aria-current="page">Projects</a><a href="../about.html">About</a><a href="../index.html#contact">Contact</a></nav></div>
 <a class="back" href="index.html">← Projects</a>
-<header style="display:grid;gap:10px"><div class="meta"><span class="tag learn">learning project</span><span>Fall 2026</span></div><h1>Portfolio choice under parameter uncertainty</h1></header>
+<header style="display:grid;gap:12px"><div class="meta"><span class="tag learn">learning project</span><span>Fall 2026</span></div><h1 style="font-size:clamp(2rem,4.5vw,2.9rem)">Portfolio choice under parameter uncertainty</h1></header>
+<div class="facts"><div><span class="v">11</span><span class="k">sector ETFs, 2010–</span></div><div><span class="v">252 / 21</span><span class="k">estimation / holding days</span></div><div><span class="v">σ/√T</span><span class="k">standard error of μ̂</span></div><div><span class="v">in progress</span><span class="k">status</span></div></div>
 <div class="article"><section><h2>Question</h2><p>The expected-return vector is the dirtiest input in portfolio choice: its standard error falls with the length of the sample in years, not with the number of observations, so ten years of data cannot distinguish a risk premium of zero from one of 8%. Mean–variance optimisation then amplifies that error through the inverse covariance matrix, and the Merton solution assumes the drift is known. This project looks at both sides of that fact.</p></section><section><h2>Empirical side</h2><p>Eleven SPDR sector ETFs, 2010–present, 252-day estimation window rolled forward 21 days at a time. Equal-weight versus unconstrained minimum-variance, with the sample covariance and the Ledoit–Wolf shrinkage estimator; turnover, condition number and out-of-sample volatility as the diagnostics. The data loader and its tests are written; the backtest is in progress.</p></section><section><h2>Theory side</h2><p>Itô's formula, the wealth process, the dynamic-programming principle, the HJB equation and the CRRA solution of the Merton problem, worked by hand; then the half-page extension where the drift lies in an interval and the control problem becomes a sup–inf.</p></section><section><h2>Results</h2><p>No results to report yet. The data loader and its tests are written; the rolling-window backtest is in progress.</p></section><section><h2>What I did myself</h2><p>I wrote the data loader and its tests, and worked through the theory exercises by hand. The empirical backtest is still in progress.</p></section><section><h2>Status and limits</h2><p>Learning project, in progress. The backtest is unfinished, so there are no completed empirical results to interpret yet.</p></section></div>
 <div class="prevnext"><a href="worldcup.html">← Fairness–stability trade-offs in knockout pairin…</a><span></span></div>
-<footer><span>Last updated November 2026.</span><span>zilinhe.com</span></footer>
 </div>
-
+<footer><span>Zilin He · last updated November 2026.</span><span>zilinhe.com</span></footer>
+<script>(function(){var r=document.documentElement,b=document.getElementById('theme');try{var t=localStorage.getItem('theme');if(t)r.setAttribute('data-theme',t)}catch(e){}
+function lab(){var cur=r.getAttribute('data-theme')||'auto';b.textContent=cur==='dark'?'Light':cur==='light'?'Dark':(matchMedia('(prefers-color-scheme:dark)').matches?'Light':'Dark')}
+if(b){lab();b.addEventListener('click',function(){var cur=r.getAttribute('data-theme');var next=cur?(cur==='dark'?'light':'dark'):(matchMedia('(prefers-color-scheme:dark)').matches?'light':'dark');r.setAttribute('data-theme',next);try{localStorage.setItem('theme',next)}catch(e){}lab()})}})();</script>
 </body>
 </html>

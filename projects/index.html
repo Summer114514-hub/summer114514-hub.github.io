@@ -8,30 +8,36 @@
 <link rel="canonical" href="https://zilinhe.com/projects/">
 <meta property="og:type" content="website"><meta property="og:title" content="Projects · Zilin He"><meta property="og:description" content="Projects by Zilin He, each tagged with its current status."><meta property="og:url" content="https://zilinhe.com/projects/"><meta property="og:site_name" content="Zilin He">
 <meta name="twitter:card" content="summary">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%226%22 fill=%22%2327516b%22/%3E%3Ctext x=%2216%22 y=%2222%22 font-family=%22Georgia,serif%22 font-size=%2217%22 font-weight=%22600%22 fill=%22white%22 text-anchor=%22middle%22%3EZH%3C/text%3E%3C/svg%3E">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%226%22 fill=%22%230f6b5a%22/%3E%3Ctext x=%2216%22 y=%2222%22 font-family=%22Georgia,serif%22 font-size=%2217%22 font-weight=%22600%22 fill=%22white%22 text-anchor=%22middle%22%3EZH%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
 <link rel="stylesheet" href="../style.css">
 
 </head>
 <body>
+<div class="top"><a class="brand" href="../index.html">Zilin He</a><nav><a href="../index.html#work">Work</a><a href="../projects/index.html" aria-current="page">Projects</a><a href="../about.html">About</a><a href="../index.html#contact">Contact</a><button type="button" id="theme" aria-label="Toggle color theme">Theme</button></nav></div>
+
 <div class="wrap">
-<div class="top"><a class="brand" href="../index.html">Zilin He</a><nav><a href="../index.html#work">Work</a><a href="../projects/index.html" aria-current="page">Projects</a><a href="../about.html">About</a><a href="../index.html#contact">Contact</a></nav></div>
-<header style="display:grid;gap:10px"><h1>Projects</h1><p class="lede">Everything here is tagged with its real status. Nothing on this page is finished yet.</p></header>
+<header style="display:grid;gap:10px"><h1 style="font-size:2.6rem">Projects</h1><p class="lede">Everything here is tagged with its real status. Nothing on this page is finished yet.</p></header>
 <section><div class="proj">
 <h3><a href="../projects/csi300.html">Price–volume signals in CSI 300 stock selection, and how much leaderboard advantage survives</a></h3>
 <div class="meta"><span class="tag prep">manuscript in preparation</span><span>first author · Oct 2026 –</span></div>
 <p>Out of a university competition on CSI 300 index enhancement: <span class="num">1st of 153</span> teams on the public leaderboard, <span class="num">27th of 85</span> on the private one. The paper asks whether price–volume signals add anything to a LightGBM cross-sectional baseline on a six-year walk-forward (2017–2022), and uses all 85 teams' scores to measure how much public-leaderboard advantage is overfitting.</p><p class="role">experiment design and evaluation protocol; an independent script that re-verifies factor RankIC, coverage and the leaderboard regressions; writing. Model code was built with AI tools and checked by me.</p>
+<a class="more" href="../projects/csi300.html">Read the project page</a>
 </div><div class="proj">
 <h3><a href="../projects/worldcup.html">Fairness–stability trade-offs in knockout pairings for the 48-team FIFA World Cup</a></h3>
 <div class="meta"><span class="tag draft">draft · under independent check</span><span>sole author · 2026</span></div>
 <p>FIFA's Annex C assigns the eight best third-placed teams to group-winner slots through a fixed table over all <span class="num">495</span> qualifying-group scenarios. I treat the table as a bi-objective combinatorial mechanism: exposure fairness across source groups versus stability when one qualifier changes. Exact exposure optimum <span class="num">1/308</span>; a Delsarte linear-programming lower bound on stability loss via the Johnson scheme.</p><p class="role">model, proofs and computation. Before submitting, I'm having the two core theorems checked by people outside the project and re-deriving them myself without the draft.</p>
+<a class="more" href="../projects/worldcup.html">Read the project page</a>
 </div><div class="proj">
 <h3><a href="../projects/portfolio-uncertainty.html">Portfolio choice under parameter uncertainty</a></h3>
 <div class="meta"><span class="tag learn">learning project</span><span>Fall 2026</span></div>
 <p>A study project running alongside my Berkeley courses: rolling-window minimum-variance backtests on US sector ETFs (sample vs. Ledoit–Wolf covariance) on one side, the Merton problem and drift uncertainty on the other. The point is to see the same estimation problem from the data side and the continuous-time side.</p>
+<a class="more" href="../projects/portfolio-uncertainty.html">Read the project page</a>
 </div></section>
-<footer><span>Last updated November 2026.</span><span>zilinhe.com</span></footer>
 </div>
-
+<footer><span>Zilin He · last updated November 2026.</span><span>zilinhe.com</span></footer>
+<script>(function(){var r=document.documentElement,b=document.getElementById('theme');try{var t=localStorage.getItem('theme');if(t)r.setAttribute('data-theme',t)}catch(e){}
+function lab(){var cur=r.getAttribute('data-theme')||'auto';b.textContent=cur==='dark'?'Light':cur==='light'?'Dark':(matchMedia('(prefers-color-scheme:dark)').matches?'Light':'Dark')}
+if(b){lab();b.addEventListener('click',function(){var cur=r.getAttribute('data-theme');var next=cur?(cur==='dark'?'light':'dark'):(matchMedia('(prefers-color-scheme:dark)').matches?'light':'dark');r.setAttribute('data-theme',next);try{localStorage.setItem('theme',next)}catch(e){}lab()})}})();</script>
 </body>
 </html>
