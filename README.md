@@ -16,4 +16,4 @@ Canonical URLs, Open Graph URLs, structured data, robots.txt and sitemap.xml use
 
 ## Current release
 
-Updated from `zilinhe-site_2.zip` on November 6, 2026. This release adds five research figures across the three project pages. The animated homepage, persistent light/dark theme control, approved contribution descriptions, custom domain and HTTPS remain in use. Stylesheets use a content version to avoid stale browser caches.
+Updated from `zilinhe-site_3.zip` on November 6, 2026. The homepage now includes Research interests and Three languages, the project list is labelled Work, and coursework appears on About. All five research figures, the animated homepage, light/dark theme control, approved contribution descriptions, custom domain and HTTPS remain in use. Stylesheet content version: `3b06a5097f8a`.

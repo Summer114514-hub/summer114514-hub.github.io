@@ -54,6 +54,17 @@ footer{max-width:700px;margin:56px auto 0;font-size:.85rem;color:var(--muted);bo
 .facts .v{font-family:var(--mono);font-size:1.15rem;color:var(--fg);font-variant-numeric:tabular-nums;line-height:1.2}.facts .k{font-size:.8rem;color:var(--muted)}
 .back{font-size:.92rem;color:var(--muted)}.back:hover{color:var(--fg);text-decoration:none}
 .prevnext{display:flex;justify-content:space-between;gap:16px;font-size:.92rem;border-top:1px solid var(--rule);padding-top:18px}
+.nest{list-style:none;margin:0;padding:0;display:grid;gap:14px}.nest li{display:grid;gap:4px;padding-left:0}
+.nest li:nth-child(2){margin-left:28px}.nest li:nth-child(3){margin-left:56px}
+.nest .lvl{font-family:var(--display);font-size:1.35rem;line-height:1.2}.nest li:nth-child(3) .lvl{color:var(--accent-ink)}
+.nest li::before{content:"";display:block;width:28px;height:1px;background:var(--rule-strong);margin-bottom:6px}
+.intro{color:var(--muted)}
+.langs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border-top:1px solid var(--rule)}
+.lang{display:grid;gap:10px;align-content:start;padding:18px 20px 18px 0}.lang+.lang{padding-left:20px;border-left:1px solid var(--rule)}
+.lang h3{font-size:1.4rem}.lang p{font-size:.95rem}.lang .stand{font-size:.86rem;color:var(--muted);border-top:1px solid var(--rule);padding-top:10px}
+.worklist{list-style:none;margin:0;padding:0;display:grid}.worklist li{display:grid;gap:4px;padding-block:14px;border-bottom:1px solid var(--rule)}
+.worklist li a{font-family:var(--display);font-size:1.3rem;line-height:1.25;color:var(--fg)}.worklist li a:hover{color:var(--accent-ink);text-decoration:none}
+@media(max-width:700px){.langs{grid-template-columns:1fr}.lang+.lang{padding-left:0;border-left:0;border-top:1px solid var(--rule)}.nest li:nth-child(2){margin-left:14px}.nest li:nth-child(3){margin-left:28px}}
 
 .fig{display:grid;gap:10px;margin-block:6px}.fig svg{background:var(--surface);border:1px solid var(--rule);border-radius:4px;padding:8px 4px 4px}
 .fig figcaption{font-size:.88rem;color:var(--muted);line-height:1.5;max-width:66ch}.fig .fn{color:var(--fg);font-weight:500}
