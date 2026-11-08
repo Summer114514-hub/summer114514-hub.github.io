@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prioritising pathogenic variants in non-syndromic orofacial clefts with regulatory annotation and machine learning · Zilin He</title>
+<meta name="description" content="A team competition project ranking candidate variants linked to orofacial clefts using regulatory annotations and machine learning.">
+<link rel="canonical" href="https://zilinhe.com/projects/gwas-clefts.html">
+<meta property="og:type" content="article"><meta property="og:title" content="Prioritising pathogenic variants in non-syndromic orofacial clefts with regulatory annotation and machine learning · Zilin He"><meta property="og:description" content="A team competition project ranking candidate variants linked to orofacial clefts using regulatory annotations and machine learning."><meta property="og:url" content="https://zilinhe.com/projects/gwas-clefts.html"><meta property="og:site_name" content="Zilin He">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%226%22 fill=%22%230f6b5a%22/%3E%3Ctext x=%2216%22 y=%2222%22 font-family=%22Georgia,serif%22 font-size=%2217%22 font-weight=%22600%22 fill=%22white%22 text-anchor=%22middle%22%3EZH%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="../style.css?v=3b06a5097f8a">
+
+</head>
+<body>
+<div class="top"><a class="brand" href="../index.html">Zilin He</a><nav><a href="../index.html#interests">Interests</a><a href="../projects/index.html" aria-current="page">Work</a><a href="../about.html">About</a><a href="../index.html#contact">Contact</a><button type="button" id="theme" aria-label="Toggle color theme">Theme</button></nav></div>
+
+<div class="wrap">
+<a class="back" href="index.html">← Work</a>
+<header style="display:grid;gap:12px"><div class="meta"><span class="tag learn">competition entry · no award</span><span>team of three · 2026</span></div><h1 style="font-size:clamp(2rem,4.5vw,2.9rem)">Prioritising pathogenic variants in non-syndromic orofacial clefts with regulatory annotation and machine learning</h1><p class="role">model training, comparison, and co-writing.</p></header>
+<div class="facts"><div><span class="v">18,629</span><span class="k">candidate variants after LD expansion</span></div><div><span class="v">11</span><span class="k">models compared</span></div><div><span class="v">0.422</span><span class="k">validation AUPRC</span></div><div><span class="v">chr 1</span><span class="k">held out whole</span></div></div>
+<div class="article"><section><h2>Question</h2><p>Genome-wide association studies for orofacial clefts point at regions, not causal variants: each hit comes with dozens of linked neighbours. The task was to rank those neighbours by how likely each is to be the functional one, using what is known about regulatory elements active in craniofacial development.</p></section><section><h2>What we did</h2><ul><li>Expanded the GWAS hits by linkage disequilibrium to 18,629 candidates and labelled them from curated sources, which left 24.7 % positives.</li><li>Held out chromosome 1 entirely rather than splitting at random, so that linked variants could not leak between training and validation.</li><li>Compared 11 models, from elastic net through XGBoost and a LightGBM ranker to a sequence model (ChromBPNet), and chose among them on validation performance, calibration, deployability and whether the top features made biological sense, not on AUPRC alone.</li></ul></section><section><h2>Results</h2><p>The best model reached a validation AUPRC of 0.422. The full candidate list was ranked and the top of it handed over for follow-up. The entry won no award.</p></section><section><h2>What I did myself</h2><p>I trained and compared the models, and wrote and revised the paper with one teammate. The other teammate and our advisor handled the biology and annotation pipeline.</p></section><section><h2>Why it is on this site</h2><p>This was my first end-to-end modelling project with real labels, real leakage risk and a real comparison protocol, and most of what I now do by reflex (hold out by structure, not at random; compare under equal budgets; report the baseline) I learned here. It is also where I learned that I prefer problems with a market in them.</p></section><section><h2>Status and limits</h2><p>Shelved after the competition. Labels come from curated databases and inherit their biases; the held-out chromosome is one of 22, so the validation number has wide uncertainty; and I cannot vouch for the biological annotation step, which was not mine.</p></section></div>
+<div class="prevnext"><a href="redcard.html">← A man down or a goal down? Pricing a red card in…</a><span></span></div>
+</div>
+<footer><span>Zilin He · last updated November 2026.</span><span>zilinhe.com</span></footer>
+<script>(function(){var r=document.documentElement,b=document.getElementById('theme');try{var t=localStorage.getItem('theme');if(t)r.setAttribute('data-theme',t)}catch(e){}
+function lab(){var cur=r.getAttribute('data-theme')||'auto';b.textContent=cur==='dark'?'Light':cur==='light'?'Dark':(matchMedia('(prefers-color-scheme:dark)').matches?'Light':'Dark')}
+if(b){lab();b.addEventListener('click',function(){var cur=r.getAttribute('data-theme');var next=cur?(cur==='dark'?'light':'dark'):(matchMedia('(prefers-color-scheme:dark)').matches?'light':'dark');r.setAttribute('data-theme',next);try{localStorage.setItem('theme',next)}catch(e){}lab()})}})();</script>
+</body>
+</html>

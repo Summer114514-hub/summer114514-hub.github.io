@@ -16,4 +16,4 @@ Canonical URLs, Open Graph URLs, structured data, robots.txt and sitemap.xml use
 
 ## Current release
 
-Updated from `zilinhe-site_4.zip` on November 7, 2026. Adds a football red card research project with two figures, links from the homepage and Work, and revised homepage and About copy. Existing contribution notes, custom domain and HTTPS remain in place. Stylesheet content version: `3b06a5097f8a`.
+Updated from `zilinhe-site_5.zip` on November 7, 2026. Replaces the portfolio uncertainty learning project with a team research project on ranking candidate variants for orofacial clefts. Includes updated navigation and sitemap, and retains the existing red card figure caption and custom domain configuration. Stylesheet content version: `3b06a5097f8a`.
